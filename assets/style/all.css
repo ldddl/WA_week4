@@ -52,7 +52,18 @@ img {
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: 'Noto Sans', 'Roboto', sans-serif; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px; }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 960px; } }
+  @media (max-width: 375px) {
+    .container {
+      max-width: 345px; } }
 
 .nav {
   background: #AA0601;
@@ -107,5 +118,27 @@ img {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+
+.header {
+  height: 100%;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true") 100% 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 348px 0 352px 0;
+  text-align: right;
+  color: #650300; }
+  .header h1 {
+    font-size: 4rem; }
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 3rem; } }
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem; } }
+  .header h2 {
+    font-size: 2.25rem; }
+    @media (max-width: 768px) {
+      .header h2 {
+        font-size: 1rem; } }
 
 /*# sourceMappingURL=all.css.map */
