@@ -1,0 +1,50 @@
+  
+  .nav{
+    background: $nav-footer-background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 88px 29.43px 88px;
+    img{
+      @include mobile{
+        padding: 15px 0;
+      }
+    }
+    @include pad{
+      padding: 30px 39px 29.43px 39px;
+    }
+    @include mobile{
+      flex-direction: column;
+      padding: 0 0;
+    }
+    &-item{
+      @include mobile{
+        width: 50%;
+      }
+    }
+    &-link{
+    color:$nav-footer-color;
+    text-decoration:none;
+    font-size: 20px;
+    padding: 30px 32px;
+    text-align: center;
+      @include pad{
+        padding: 0 20px;
+      }
+      @include mobile{
+        border: 1px solid #ffffff;
+        padding: 8px 54px;
+        display: block;
+      }
+    }
+    &-list{
+      display: flex;
+      @include mobile{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+  
+  
+  
