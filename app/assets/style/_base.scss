@@ -5,6 +5,7 @@ img {
   }
   *, *::before, *::after{
     box-sizing: border-box;
+    font-family: 'Noto Sans', 'Roboto', sans-serif;
   }
   @mixin pad{
     @media (max-width:768px) {
@@ -14,5 +15,15 @@ img {
   @mixin mobile{
     @media (max-width:375px) {
         @content;
+    }
+  }
+  .container{
+    margin: 0 auto;
+    max-width: 1100px;
+    @include pad{
+      max-width: 960px;
+    }
+    @include mobile{
+      max-width: 345px;
     }
   }

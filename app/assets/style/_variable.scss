@@ -1,5 +1,17 @@
 
-// $color: #00cc99;
-
+// nav和footer文字
 $nav-footer-color:#ffffff;
+// nav和footer背景
 $nav-footer-background-color:#AA0601;
+
+//主色
+$color-primary: #650300;
+
+//文字大小
+$font-size-base: 1rem;
+$font-size-16: $font-size-base * 1;
+$font-size-20: $font-size-base * 1.25;
+$font-size-32: $font-size-base * 2;
+$font-size-36: $font-size-base * 2.25;
+$font-size-48: $font-size-base * 3;
+$font-size-64: $font-size-base * 4;

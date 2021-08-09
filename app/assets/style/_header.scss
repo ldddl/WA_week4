@@ -1,0 +1,24 @@
+.header{
+    height: 100%;
+    background:url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true') 100% 100%;
+    background-size: cover;
+    background-position:center;
+    padding: 348px 0 352px 0;
+    text-align: right;
+    color: $color-primary;
+    h1{
+        font-size: $font-size-64;
+        @include pad{
+            font-size: $font-size-48;
+        }
+        @include pad{
+            font-size: $font-size-32;
+        }
+    }
+    h2{
+        font-size: $font-size-36;
+        @include pad{
+            font-size: $font-size-16;
+        }
+    }
+}
