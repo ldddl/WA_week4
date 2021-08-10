@@ -1,0 +1,106 @@
+header{
+    // display:none;
+}
+.footer{
+    background: $nav-footer-background-color;
+    color: $nav-footer-color;
+    a{
+        color:$nav-footer-color;
+        font-size: $font-size-16;
+    }
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        padding: 44px 0 36px 0;
+        @include pad{
+            padding: 32px 0 25px 0;
+        }
+    }
+    &-menu-list{
+      display: flex;
+      align-items: center;
+      @include mobile{
+        display:none;
+        }
+    }
+    &-menu-items{
+      margin-right: 48px;
+      @include pad{
+        margin-right: 40px;
+        border: 1px solid #000;
+      }
+    }
+    &-icon-list{
+        display: flex;
+        &-items{
+            margin-right: 48px;
+        }
+        img{
+            margin-left: 32px;
+        @include mobile{
+            width: 24px;
+        }
+        }
+    }
+    &-content-list{
+        display: flex;
+        flex-direction: column;margin-bottom: 8px ;
+        border-bottom : 1px solid #FFFFFF;
+    }
+    &-content-items{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        img{
+            max-width: 48px;
+            margin-right: 16px;
+            @include pad{
+                max-width: 24px;
+            }
+            @include mobile{
+                max-width: 20px;
+            }
+        }
+        h2{
+            font-size: $font-size-36;
+            @include pad{
+                font-size: $font-size-20;
+            }
+            @include mobile{
+                font-size: $font-size-16;
+            }
+        }
+    }
+    &-bottom{
+        padding: 32px 0 40px 0;
+        display: flex;
+        justify-content: space-between;
+        @include mobile{
+            font-size: $font-size-14;
+            // justify-content: start;
+            flex-direction: column;
+        }
+        &-list{
+            display: flex;
+            @include mobile{
+                display: block;
+            }
+        }
+        &-items{
+            margin-left: 48px;
+            @include pad{
+                font-size: $font-size-14;
+            }
+            @include mobile{
+                font-size: $font-size-14;
+                margin: 8px 0 0 0;
+            }
+        }
+    }
+}
+
+// .footer-menu{
+//     display: flex;
+//     color: #000;
+//     margin-right: 48px;
+// }

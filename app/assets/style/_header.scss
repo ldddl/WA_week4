@@ -1,6 +1,6 @@
 .header{
-    height: 100%;
-    background:url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true') 100% 100%;
+    // height: 100%;
+    background:url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true') ;
     background-size: cover;
     background-position:center;
     padding: 348px 0 352px 0;
@@ -11,7 +11,7 @@
         @include pad{
             font-size: $font-size-48;
         }
-        @include pad{
+        @include mobile{
             font-size: $font-size-32;
         }
     }

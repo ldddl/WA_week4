@@ -15,26 +15,26 @@
     }
     @include mobile{
       flex-direction: column;
-      padding: 0 0;
+      padding: 0;
     }
     &-item{
       @include mobile{
         width: 50%;
+        border: 1px solid #ffffff;
+        text-align: center;
       }
     }
     &-link{
     color:$nav-footer-color;
     text-decoration:none;
-    font-size: 20px;
+    font-size: $font-size-20;
     padding: 30px 32px;
     text-align: center;
       @include pad{
         padding: 0 20px;
       }
       @include mobile{
-        border: 1px solid #ffffff;
-        padding: 8px 54px;
-        display: block;
+        padding: 8px 0;
       }
     }
     &-list{
